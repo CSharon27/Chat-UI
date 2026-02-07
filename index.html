@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatUI | Connect Instantly. Chat Seamlessly.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header
+        style="background: var(--bg-card); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid var(--border-color);">
+        <nav class="container flex justify-between items-center" style="height: 72px;">
+            <a href="index.html" class="brand flex items-center gap-2" style="font-size: 1.5rem; font-weight: 700;">
+                <i class="fas fa-comment-dots" style="color: var(--primary);"></i>
+                <span>ChatUI</span>
+            </a>
+            <div class="nav-links flex items-center gap-8">
+                <a href="#features" class="text-muted" style="font-weight: 500;">Features</a>
+                <button id="theme-toggle" class="btn-icon"
+                    style="background: none; color: var(--text-main); font-size: 1.25rem;">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="chat.html" class="btn btn-primary">Start Chatting</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="padding: var(--space-24) 0 var(--space-16);">
+            <div class="container flex items-center justify-between" style="flex-wrap: wrap; gap: var(--space-12);">
+                <div class="hero-content flex-column animate-fade" style="flex: 1.2; min-width: 300px;">
+                    <h1
+                        style="font-size: clamp(2.5rem, 5vw, 3.75rem); line-height: 1.1; margin-bottom: var(--space-6);">
+                        Connect Instantly. <span style="color: var(--primary);">Chat Seamlessly.</span></h1>
+                    <p class="text-muted" style="font-size: 1.25rem; margin-bottom: var(--space-10); max-width: 540px;">
+                        The ultimate communication platform for modern teams and individuals. Clean, fast, and secure
+                        messaging at your fingertips. Experience the next generation of chat.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <a href="chat.html" class="btn btn-primary">
+                            Launch App <i class="fas fa-rocket"></i>
+                        </a>
+                        <a href="#features" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-image animate-scale"
+                    style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
+                    <div class="chat-preview"
+                        style="background: var(--bg-card); padding: 20px; border-radius: 24px; box-shadow: var(--shadow-lg); width: 100%; max-width: 500px; border: 1px solid var(--border-color);">
+                        <div class="chat-header flex items-center gap-3"
+                            style="border-bottom: 1px solid var(--border-color); padding-bottom: 15px; margin-bottom: 20px;">
+                            <div
+                                style="width: 40px; height: 40px; border-radius: 50%; background: var(--primary); display: flex; align-items: center; justify-content: center; color: white;">
+                                AI</div>
+                            <div>
+                                <div style="font-weight: 600;">Assistant Bot</div>
+                                <div style="font-size: 0.8rem; color: #10b981;">Online</div>
+                            </div>
+                        </div>
+                        <div class="chat-mockup flex-column gap-3">
+                            <div
+                                style="align-self: flex-start; background: var(--chat-bot-bg); padding: 10px 15px; border-radius: 12px 12px 12px 4px; max-width: 80%; font-size: 0.9rem;">
+                                Hello! How can I help you today?</div>
+                            <div
+                                style="align-self: flex-end; background: var(--chat-user-bg); color: white; padding: 10px 15px; border-radius: 12px 12px 4px 12px; max-width: 80%; font-size: 0.9rem;">
+                                I'd like to try out this amazing new chat interface!</div>
+                            <div
+                                style="align-self: flex-start; background: var(--chat-bot-bg); padding: 10px 15px; border-radius: 12px 12px 12px 4px; max-width: 80%; font-size: 0.9rem;">
+                                Great choice! Click 'Start Chatting' to begin.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" style="padding: 80px 0; background-color: var(--bg-card);">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 60px;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Experience the Future of Chat</h2>
+                    <p class="text-muted" style="font-size: 1.1rem;">Powerful features designed for the best user
+                        experience.</p>
+                </div>
+                <div class="features-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                    <div class="feature-card animate-fade"
+                        style="padding: 30px; background: var(--bg-main); border-radius: 20px; transition: var(--transition);">
+                        <div
+                            style="width: 50px; height: 50px; border-radius: 12px; background: rgba(37, 99, 235, 0.1); color: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 20px;">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 style="margin-bottom: 10px;">Real-time Feel</h3>
+                        <p class="text-muted">Simulated real-time interactions with smart bot responses and typing
+                            indicators.</p>
+                    </div>
+                    <div class="feature-card animate-fade"
+                        style="padding: 30px; background: var(--bg-main); border-radius: 20px; transition: var(--transition);">
+                        <div
+                            style="width: 50px; height: 50px; border-radius: 12px; background: rgba(16, 185, 129, 0.1); color: #10b981; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 20px;">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h3 style="margin-bottom: 10px;">Smooth Transitions</h3>
+                        <p class="text-muted">Fluid animations and transitions make the experience feel premium and
+                            alive.</p>
+                    </div>
+                    <div class="feature-card animate-fade"
+                        style="padding: 30px; background: var(--bg-main); border-radius: 20px; transition: var(--transition);">
+                        <div
+                            style="width: 50px; height: 50px; border-radius: 12px; background: rgba(245, 158, 11, 0.1); color: #f59e0b; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 20px;">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 style="margin-bottom: 10px;">Fully Responsive</h3>
+                        <p class="text-muted">Perfectly adaptive layout that looks stunning on desktop, tablet, and
+                            mobile.</p>
+                    </div>
+                    <div class="feature-card animate-fade"
+                        style="padding: 30px; background: var(--bg-main); border-radius: 20px; transition: var(--transition);">
+                        <div
+                            style="width: 50px; height: 50px; border-radius: 12px; background: rgba(139, 92, 246, 0.1); color: #8b5cf6; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 20px;">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                        <h3 style="margin-bottom: 10px;">Dark Mode</h3>
+                        <p class="text-muted">Easy on the eyes with a beautiful dark theme that persists across
+                            sessions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer
+        style="padding: var(--space-16) 0 var(--space-8); border-top: 1px solid var(--border-color); background: var(--bg-card);">
+        <div class="container">
+            <div class="footer-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-12); margin-bottom: var(--space-12);">
+                <div class="footer-info">
+                    <div class="brand flex items-center gap-2"
+                        style="font-size: 1.5rem; font-weight: 700; margin-bottom: var(--space-4);">
+                        <i class="fas fa-comment-dots" style="color: var(--primary);"></i>
+                        <span>ChatUI</span>
+                    </div>
+                    <p class="text-muted" style="font-size: 0.95rem; margin-bottom: var(--space-6);">
+                        Building the future of communication with simplicity and speed. Join millions of users
+                        worldwide.
+                    </p>
+                    <div class="social-links flex gap-4">
+                        <a href="#" class="text-muted hover:text-primary" style="font-size: 1.25rem;"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-muted hover:text-primary" style="font-size: 1.25rem;"><i
+                                class="fab fa-github"></i></a>
+                        <a href="#" class="text-muted hover:text-primary" style="font-size: 1.25rem;"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <h4 style="margin-bottom: var(--space-6); font-size: 1.1rem;">Product</h4>
+                    <ul class="flex-column gap-3">
+                        <li><a href="#features" class="text-muted hover:text-primary">Features</a></li>
+                        <li><a href="chat.html" class="text-muted hover:text-primary">Chat App</a></li>
+                        <li><a href="#" class="text-muted hover:text-primary">Integrations</a></li>
+                        <li><a href="#" class="text-muted hover:text-primary">Updates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4 style="margin-bottom: var(--space-6); font-size: 1.1rem;">Company</h4>
+                    <ul class="flex-column gap-3">
+                        <li><a href="#" class="text-muted hover:text-primary">About Us</a></li>
+                        <li><a href="#" class="text-muted hover:text-primary">Careers</a></li>
+                        <li><a href="#" class="text-muted hover:text-primary">Contact</a></li>
+                        <li><a href="#" class="text-muted hover:text-primary">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4 style="margin-bottom: var(--space-6); font-size: 1.1rem;">Support</h4>
+                    <ul class="flex-column gap-3">
+                        <li><a href="#" class="text-muted hover:text-primary">Help Center</a></li>
+                        <li><a href="#" class="text-muted hover:text-primary">Community</a></li>
+                        <li><a href="#" class="text-muted hover:text-primary">Status</a></li>
+                        <li><a href="#" class="text-muted hover:text-primary">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom flex justify-between items-center"
+                style="padding-top: var(--space-8); border-top: 1px solid var(--border-color);">
+                <p class="text-muted" style="font-size: 0.85rem;">&copy; 2026 ChatUI Inc. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-muted" style="font-size: 0.85rem;">Terms</a>
+                    <a href="#" class="text-muted" style="font-size: 0.85rem;">Privacy</a>
+                    <a href="#" class="text-muted" style="font-size: 0.85rem;">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
